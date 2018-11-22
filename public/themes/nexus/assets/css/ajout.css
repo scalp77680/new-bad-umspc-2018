@@ -1,0 +1,22 @@
+/*
+www.devsaran.com
+*/
+
+
+/* Reset
+================================================== */
+
+#primary {   
+	border-right: 1px solid red ;
+
+}
+.views-row {   
+	border:1px solid red;
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	border-radius:7px;
+	padding:5px;
+	margin-bottom 10px;
+}
+
+
