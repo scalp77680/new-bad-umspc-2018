@@ -7,16 +7,41 @@ www.devsaran.com
 ================================================== */
 
 #primary {   
-	border-right: 1px solid red ;
+	/*border-right: 1px solid red ;*/
 
 }
+
+
+h1#site-title {
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 20px 20px rgba(0,0,0,.15);
+    margin-top: 30px;
+}
+
 .views-row {   
 	border:1px solid red;
 	-moz-border-radius:7px;
 	-webkit-border-radius:7px;
 	border-radius:7px;
-	padding:5px;
-	margin-bottom 10px;
+	padding:10px;
+	margin-bottom : 10px ;
 }
 
 
+.views-row  img {
+	/* 
+    border-radius: 20%;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	 */
+}
+
+
+
+.views-row  .links li a
+{
+    background-color: red;
+    color: #FFF;
+   text-shadow: 1px 1px red;
+}
