@@ -40,16 +40,20 @@ h1#site-title a:link, h1#site-title a:visited {
     color: #fff;
 }
 
+.page-title {
+    color: red;
+}
 
-.site-branding{
-	height: 80px;
+
+#block-nexus-page-title .quickedit-field{
+    color:#f4473a;
 }
 
 article {   
     padding:20px;
     margin-bottom : 20px ;
     background-color:#fff ;
-
+    border-bottom: solid 1px red;
 }
 
 .views-row  img {
@@ -106,12 +110,10 @@ article {
     background-color:#f1f1f1 ;
 }
 
-/*#content,#primary
+#content,#primary
 {
     background-color:#fff ;
 }
-
-*/
 
 .feed-icon{
     display: none;
