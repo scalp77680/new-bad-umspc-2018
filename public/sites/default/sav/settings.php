@@ -280,7 +280,7 @@ $config_directories = [];
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = 'Au0UfW9QWOSj6mea4xHDk1E-iurTG_cFM93YyY38AesmppBzBv-SEFgnwL8PSH1tBIww38zd7Q';
+$settings['hash_salt'] = 's4sK9jgbHNZEbv6x8xftEYpaSrvP70-OeVTwYpTNf4vGg-ZWPDMn9B5iuAwX8-uJ-iTTl96_vA';
 
 /**
  * Deployment identifier.
@@ -303,7 +303,7 @@ $settings['hash_salt'] = 'Au0UfW9QWOSj6mea4xHDk1E-iurTG_cFM93YyY38AesmppBzBv-SEF
  * After finishing the upgrade, be sure to open this file again and change the
  * TRUE back to a FALSE!
  */
-$settings['update_free_access'] = TRUE;
+$settings['update_free_access'] = FALSE;
 
 /**
  * External access proxy settings:
@@ -764,10 +764,10 @@ $settings['entity_update_batch_size'] = 50;
  *
  * Keep this code block at the end of this file to take full effect.
  */
-#
-# if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
-#   include $app_root . '/' . $site_path . '/settings.local.php';
-# }
+
+if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+   include $app_root . '/' . $site_path . '/settings.local.php';
+ }
 $databases['default']['default'] = array (
   'database' => 'test-drupal-8',
   'username' => 'root',
@@ -778,4 +778,4 @@ $databases['default']['default'] = array (
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 );
-$config_directories['sync'] = 'sites/default/files/config_d1UL1X2Q9_cDTMZ1zIbOv27IrI2HcO3hxyEL4KYy4zrlb7rGpNlb1bExMw83w2qId8xWaJbyBg/sync';
+$config_directories['sync'] = 'sites/default/files/config_noOATrYqr4-nNSQeF61wlZ_NIqQbW3qyCpKFCGL_im1ijxIM31vQ96vAWB-qgzHlxejssoyndg/sync';
