@@ -273,7 +273,7 @@ a:focus {
   position: relative;
 }
 .site-branding{
-  margin-bottom: 20px;
+ /*margin-bottom: 20px;*/
 }
 #site-logo {
   float: left;
