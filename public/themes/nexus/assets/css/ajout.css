@@ -12,8 +12,21 @@ www.devsaran.com
 }
 
 .site-header {   
- background-color: #4d5256;
 
+ background-image: url("/sites/default/files/fond-bandeau.png");
+ background-repeat: no-repeat, repeat;
+ background-color: #cccccc;
+ /*
+  background: #fff url("images/fond-bandeau.png") repeat;
+ height: 283px;
+ margin-right: 0; 
+ margin-left: 0; 
+ max-width: 1903px;*/
+}
+
+
+#site-title {   
+    visibility: hidden;
 }
 
 .site-header {
@@ -24,8 +37,32 @@ www.devsaran.com
 
 #site-logo {
     float: left;
-    padding: 15px 15px 0  15px;
+   /* padding: 15px 15px 0  15px;*/
 }
+
+#main-menu {
+    padding-bottom: 10px;
+    margin: 100px 0px 15px;
+    height: 55px;
+    background-image: url("/sites/default/files/fond-menu-bleu.png");
+    background-repeat: repeat; 
+    width: 100%;
+}
+
+#main-menu li {
+    position: relative;
+    top: -15px; 
+
+}
+
+#main-menu li a:hover{
+    position: relative;
+    top: -15px; 
+
+}
+
+
+
 
 h1#site-title {
 	/*
@@ -76,7 +113,8 @@ article {
 }
 .col-sm-4 
 {
-    background-color: #ee6e01;   
+    background-image: url("/sites/default/files/fond-col-droite.png");
+    background-repeat: repeat; 
     height:1280px;  
 }
 #sidebar a
@@ -88,7 +126,8 @@ article {
 
 
 #block-nexus-tools-menu {
-    color:#555555;
+    color:#fff;
+    text-transform: capitalize;
     font-weight: bold;
 }
 
