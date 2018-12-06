@@ -423,9 +423,13 @@ h1#site-title a:link, h1#site-title a:visited{
 /* Slider */
 
 #slidebox{
-  max-height: 550px;
+  max-height: 350px;
   position: relative;
   background: #000;
+}
+
+.flexslider .slides li {
+    max-height: 350px!important;  
 }
 
 .doverlay{
@@ -506,9 +510,14 @@ a.frmore{
 
 
 #bottom{
-  padding: 20px 0px 40px 0px;
-  background: #3b3b3b;
-  border-top:5px solid #ed564b;
+   
+  background-color: #0c49be;
+  /*
+  padding: 20px 0px 40px 0px; 
+  background-image: url("/sites/default/files/fond-bas-bleu.png");
+  background-repeat: repeat;  
+  */
+  border-top:5px solid #0c49be;
 }
 
 .footer-block{
@@ -529,6 +538,7 @@ a.frmore{
   padding: 10px 0px;
   background:#292929;
   font-size: 12px;
+  display: none;
 }
 
 .fcred{

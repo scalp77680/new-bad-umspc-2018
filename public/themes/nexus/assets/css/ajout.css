@@ -40,6 +40,12 @@ www.devsaran.com
    /* padding: 15px 15px 0  15px;*/
 }
 
+.site-branding {
+    /* margin-bottom: 20px; */
+    max-height: 290px;
+}
+
+
 #main-menu {
     padding-bottom: 10px;
     margin: 100px 0px 15px;
@@ -58,11 +64,7 @@ www.devsaran.com
 #main-menu li a:hover{
     position: relative;
     top: -15px; 
-
 }
-
-
-
 
 h1#site-title {
 	/*
@@ -126,6 +128,9 @@ article {
 
 
 #block-nexus-tools-menu {
+    display: block;
+    border-bottom: solid 1px white;
+    margin-bottom: 10px;
     color:#fff;
     text-transform: capitalize;
     font-weight: bold;
@@ -156,4 +161,11 @@ article {
 
 .feed-icon{
     display: none;
+}
+
+.footer-block a:link, a:visited {
+  color: #fff;
+}
+.footer-block a:hover {
+  color: red;
 }

@@ -763,8 +763,9 @@ pre code {
 
 @media(min-width:768px) {
     .row {
-        margin-right: -15px;
+     /*   margin-right: -15px;
         margin-left: -15px
+        */
     }
 }
 
