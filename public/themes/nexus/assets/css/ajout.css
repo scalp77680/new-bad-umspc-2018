@@ -163,9 +163,17 @@ article {
     display: none;
 }
 
-.footer-block a:link, a:visited {
+.footer-block a {
   color: #fff;
 }
 .footer-block a:hover {
   color: red;
 }
+
+.traitblc{
+    width: 100%;
+    height: 2px;
+    background-color: red;
+    margin-bottom: 10px;
+} 
+
