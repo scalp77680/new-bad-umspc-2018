@@ -119,8 +119,35 @@ function nexus_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\FormSt
     '#default_value' => theme_get_setting('slide3_image','nexus'),
     '#upload_location' => 'public://',
   );
+  $form['nexus_settings']['slideshow']['slide4'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Slide 4'),
+    '#collapsible' => TRUE,
+    '#collapsed' => TRUE,
+  );
+  $form['nexus_settings']['slideshow']['slide4']['slide4_head'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Slide Headline'),
+    '#default_value' => theme_get_setting('slide4_head','nexus'),
+  );
+  $form['nexus_settings']['slideshow']['slide4']['slide4_desc'] = array(
+    '#type' => 'textarea',
+    '#title' => t('Slide Description'),
+    '#default_value' => theme_get_setting('slide4_desc','nexus'),
+  );
+  $form['nexus_settings']['slideshow']['slide4']['slide4_url'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Slide URL'),
+    '#default_value' => theme_get_setting('slide4_url','nexus'),
+  );
+  $form['nexus_settings']['slideshow']['slide4']['slide4_image'] = array(
+    '#type' => 'managed_file',
+    '#title' => t('Image 4'),
+    '#default_value' => theme_get_setting('slide4_image','nexus'),
+    '#upload_location' => 'public://',
+  );
   $form['nexus_settings']['slideshow']['slideimage'] = array(
-    '#markup' => t('To change the default Slide Images, Replace the slide-image-1.jpg, slide-image-2.jpg and slide-image-3.jpg in the images folder of the theme folder.'),
+    '#markup' => t('To change the default Slide Images, Replace the slide-image-1.jpg, slide-image-2.jpg,  slide-image-3.jpg and slide-image-4.jpg in the images folder of the theme folder.'),
   );
   $form['#submit'][] = 'nexus_settings_form_submit';
   $theme = \Drupal::theme()->getActiveTheme()->getName();

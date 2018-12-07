@@ -280,7 +280,7 @@ $config_directories = [];
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = 'r-jVlnGv5zghrdFrDXImNU9BXrLUHmEsrcvAV7dXcGHvmxBTUAzE-6T2OvBSur37udzSGdwWCA';
+$settings['hash_salt'] = '';
 
 /**
  * Deployment identifier.
@@ -705,12 +705,10 @@ $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
  *
  * For example:
  * @code
- */ $settings['trusted_host_patterns'] = array(
-   '^www\.badminton-ums-pontault\.com$',
-   '^badminton-ums-pontault\.com$',
-   '^.+\badminton-ums-pontault\.com$',
-  );
- /* @endcode
+ * $settings['trusted_host_patterns'] = array(
+ *   '^www\.example\.com$',
+ * );
+ * @endcode
  * will allow the site to only run from www.example.com.
  *
  * If you are running multisite, or if you are running your site from
@@ -770,16 +768,3 @@ $settings['entity_update_batch_size'] = 50;
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
-$databases['default']['default'] = array (
-  'database' => 'fw32znt1_drupalumspc',
-  'username' => 'fw32znt1_pascal',
-  'password' => '&{GusE],=}O-',
-  'prefix' => '',
-  'host' => 'lhcp1046.webapps.net',
-  'port' => '3306',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'driver' => 'mysql',
-);
-$config_directories['sync'] = 'sites/default/files/config_NuZCJhlvvofNe75QJahHYE2VEbWSfq1J0WMpnPx-AoitXSPRZhPRS8jzjcKzQZrxGs-ZQjsQNw/sync';
-
-

@@ -59,6 +59,22 @@ function nexus_preprocess_page(&$variables) {
    }
    $variables['slide3_image'] = $image_path;
 
+  $variables['slide4_head'] = theme_get_setting('slide4_head','nexus');
+  $variables['slide4_desc'] = check_markup(theme_get_setting('slide4_desc','nexus'), 'full_html');
+  $variables['slide4_url'] = theme_get_setting('slide4_url','nexus');
+  // slide3_image
+  $fid = theme_get_setting("slide4_image", "nexus");
+  if (!empty($fid)) {
+    $file = \Drupal\file\Entity\File::load($fid[0]);
+    $uri = $file->getFileUri();
+    $image_path = file_create_url($uri);
+   }
+   else {
+    $image_path =  drupal_get_path('theme', 'nexus') . '/assets/images/slide-image-4.jpg';
+   }
+   $variables['slide4_image'] = $image_path;
+
+
   $variables['this_year']= date('Y');
 
   $variables['preface_col'] = ( ( (bool) $variables['page']['preface_first'] + (bool) $variables['page']['preface_second'] + (bool) $variables['page']['preface_third'] ) );

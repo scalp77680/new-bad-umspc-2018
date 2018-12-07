@@ -117,7 +117,7 @@ article {
 {
     background-image: url("/sites/default/files/fond-col-droite.png");
     background-repeat: repeat; 
-    height:1280px;  
+    height:1320px;  
 }
 #sidebar a
 {
@@ -134,6 +134,30 @@ article {
     color:#fff;
     text-transform: capitalize;
     font-weight: bold;
+}
+#block-formulairederecherche h2 {
+    display: block;
+    border-bottom: solid 1px white;
+    margin-bottom: 10px;
+    color:#fff;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+#block-formulairederecherche input[type="search"] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+}
+
+
+#block-formulairederecherche #edit-actions input {
+    margin-right: 0.6em;
+    margin-top: -20PX;
+    margin-left: 10PX;
+    margin-bottom: 10px;
 }
 
 #block-nexus-user-account-menu-menu ul,li
